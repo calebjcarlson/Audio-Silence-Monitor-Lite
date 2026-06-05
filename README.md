@@ -17,7 +17,7 @@ A smart, network-connected audio silence monitor built on the Seeed Studio XIAO 
 | **XIAO ESP32-C3** | 1 | Microcontroller with Wi-Fi/BLE | Main processor |
 | **Capacitor 1µF (105)** | 1 | Ceramic or Electrolytic | Blocks external DC offset |
 | **Resistor 10kΩ** | 2 | 1/4W Resistors | Creates the 1.65V DC bias for the ADC |
-| **Resistor 50kΩ** | 2 | 1/4W Resistors | Current limiting for LEDs |
+| **Resistor 330Ω** | 2 | 1/4W Resistors | Current limiting for LEDs |
 | **LED (Red)** | 1 | 3mm or 5mm LED | Status & Alarm indicator |
 | **LED (Green)** | 1 | 3mm or 5mm LED | Status & Normal indicator |
 | **Tactile Push Button** | 1 | Momentary Button | Initiates calibration routine |
@@ -33,8 +33,8 @@ A smart, network-connected audio silence monitor built on the Seeed Studio XIAO 
   * Audio Ground $\rightarrow$ `GND`
 * **Control & Indicators:**
   * **Button:** `Pin D7` $\rightarrow$ Momentary Button $\rightarrow$ `GND`
-  * **Red LED:** `Pin D8` $\rightarrow$ `50kΩ Resistor` $\rightarrow$ Anode (+), Cathode (-) to `GND`
-  * **Green LED:** `Pin D9` $\rightarrow$ `50kΩ Resistor` $\rightarrow$ Anode (+), Cathode (-) to `GND`
+  * **Red LED:** `Pin D8` $\rightarrow$ `330Ω Resistor` $\rightarrow$ Anode (+), Cathode (-) to `GND`
+  * **Green LED:** `Pin D9` $\rightarrow$ `330Ω Resistor` $\rightarrow$ Anode (+), Cathode (-) to `GND`
 
 ---
 
